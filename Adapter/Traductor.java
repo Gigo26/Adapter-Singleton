@@ -7,7 +7,7 @@ public class Traductor {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        String mensajeEnEspanol = "Ya me tengo que ir";
+        String mensajeEnEspanol = "Hola, ¿cómo estás?";
 
         Adaptador adaptadorIngles = new AdaptadorIngles();
         Adaptador adaptadorQuechua = new AdaptadorQuechua();
@@ -22,7 +22,6 @@ public class Traductor {
             System.out.println("[3] Portugués.");
             System.out.println("[4] Salir");
             int opc = sc.nextInt();
-            sc.nextLine(); // Consumir la nueva línea pendiente
             switch(opc){
                 case 1:
                     System.out.println("Mensaje en inglés: " + adaptadorIngles.traducir(mensajeEnEspanol));
